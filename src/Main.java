@@ -155,12 +155,13 @@ public class Main {
         g.dfs("A");
         g.bfs("A");
 
-        // Setup Task 4-5 Network
+        // Setup Task 4-5 Network (Corrected distances from the image)
         RoadNetwork roads = new RoadNetwork();
-        roads.addRoad("Edinburgh", "Stirling", 37);
-        roads.addRoad("Edinburgh", "Perth", 45);
-        roads.addRoad("Stirling", "Perth", 34);
-        roads.addRoad("Perth", "Dundee", 22);
-        roads.dijkstra("Edinburgh", "Dundee");
+        roads.addRoad("Edinburgh", "Stirling", 50);
+        roads.addRoad("Edinburgh", "Perth", 100);
+        roads.addRoad("Stirling", "Perth", 40);
+        roads.addRoad("Perth", "Dundee", 60);
+        roads.addRoad("Glasgow", "Stirling", 50);
+        roads.addRoad("Glasgow", "Edinburgh", 70);
     }
 }
